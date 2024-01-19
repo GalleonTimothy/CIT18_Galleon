@@ -1,19 +1,19 @@
-function hideAll(){
-    var allDivs = document.querySelectorAll('.about, .skills');
-    allDivs.forEach(function(div){
-        div.style.display = 'none';
-    });
-}
+function showDiv(divName, currentLink) {
 
-function toggleVisibility(classname){
-    var element = document.querySelector('.' + classname);
-    element.style.display = (element.style.display === 'none') ? 'flex' : 'none';
-}
+            var links = document.querySelectorAll('ul li a');
+            for (var i = 0; i < links.length; i++) {
+                links[i].classList.remove('active');
+            }
 
-document.getElementById('about').addEventListener('click', function(){
-    toggleVisibility('about');
-});
+   
+            currentLink.classList.add('active');
 
-document.getElementById('skills').addEventListener('click', function(){
-    toggleVisibility('skills');
-});
+        
+            var divsToHide = document.querySelectorAll('.education, .skills, .experience, .contact');
+            for (var i = 0; i < divsToHide.length; i++) {
+                divsToHide[i].style.display = "none";
+            }
+
+          
+            document.querySelector('.' + divName).style.display = "flex";
+        }

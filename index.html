@@ -1,139 +1,163 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
-    <title>Resume</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <link rel="stylesheet" href="css-js/style.css">
+    <title>Document</title>
 
 </head>
+
 <body>
+    <header>
+        <div class="logo">TIMMY</div>
 
-
-    <div class="cancel">
-        <video loop>
-            <source src="Cocomelon.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-        <button id="playButton" onclick="unmuteBackgroundMusic()">CLICK ME BABY</button>
-
-    </div>
-
-<div class="container">
-
-<!----------------------------------------->
-<div class="top-right-shape"></div>
-
-<!----------------------------------------->
-
-<section class="left">
-    <div class="left-info">
-        <img src="resume-profile.jpg" class="profile">
-
-        <div class="education">
-            <h3>Education</h3>
-            <ul>
-                <li><p>University of the Cordilleras :</p>
-                    <i>Bachelor of Science in Information Technology</i>
-                </li>
-            </ul>
-        </div>
-
-
-        <div class="contact">
-            <h3>Contact</h3>
-            <ul>
-                <li>
-                    <p><ion-icon name="mail"></ion-icon> : timothyguiang11142001@gmail.com</p>
-                    <p><ion-icon name="call"></ion-icon> : +639153074905</p>
-                    <p><ion-icon name="location"></ion-icon> : Hermosa, Dasol, Pang.</p>
-                </li>
-            </ul>
-        </div>
-
-        <div class="achievements">
-            <h3>Achievements</h3>
-            <ul>
-                <li>
-                    <p>2021 - 2022 :</p>
-                    <i>Completed all the certifications offered on FreeCodeCamp.</i>
-                </li>
-
-                <li>
-                    <p>2023 - 2024 :</p>
-                    <i>Designed and developed an innovative reporting web application for the LTFRB</i>
-                </li>
-            </ul>
-        </div>
-    </div>
-
-</section>
-
-
-<!----------------------------------------->
-
-<section class="right">
-
-    <div class="top-right">
-
-
-    <div class="personal-info">
-        <h3 class="name">Timothy Galleon</h3>
-        <i class="occupation">Web Developer</i>
-        <hr>
-        <p>Motivated and detail-oriented Web Developer with a passion for crafting seamless and responsive user experiences. With a solid foundation in front-end and back-end technologies, I excel in translating complex ideas into clean, maintainable code. My commitment to staying abreast of the latest industry trends ensures that the websites and applications I develop are not only functional but also incorporate cutting-edge design and usability principles.</p>
-
-
-    </div>
-
-    </div>
-
-
-
-    <div class="professional-ex">
-        <h3>Professional Experience</h3>
         <ul>
-            <li>University of the Cordilleras | Web Dev Student <br>2020 - present
+            <li><a href="#" id="homeLink" onclick="showDiv('home', this)" class="active">Home</a></li>
+            <li><a href="#" id="educationLink" onclick="showDiv('education', this)">Education</a></li>
+            <li><a href="#" id="skillsLink" onclick="showDiv('skills', this)">Skills</a></li>
+            <li><a href="#" id="expLink" onclick="showDiv('experience', this)">Experience</a></li>
+            <li><a href="#" id="contact" onclick="showDiv('contact', this)">Contact</a></li>
+        </ul>
+    </header>
+
+    <div class="home">
+        <div class="intro">
+
+            <div class="name-img">
+                <div class="name">Hi There! <br>I'm Timothy Galleon
+                <br><p>Web Developer</p></div>
+                <img src="profile.jpg" alt="">
+            </div>
+
+            <hr>
+            <p class="text">Motivated and detail-oriented Web Developer with a passion for crafting seamless and responsive user experiences. With a
+            solid foundation in front-end and back-end technologies, I excel in translating complex ideas into clean, maintainable
+            code. My commitment to staying abreast of the latest industry trends ensures that the websites and applications I
+            develop are not only functional but also incorporate cutting-edge design and usability principles.</p>
+
+        </div>
+
+
+    </div>
+
+
+
+    <div class="education">
+        <section>
+            <h3>UNIVERSITY OF THE CORDILLERAS</h3>
+            <p><i><b>Bachelor of Science in Information Technology / Web Technology Track</b></i></p>
+            <p>Year : 2020 - Present</p>
+            <br>
+        
+            <h4>ACHIEVEMENT</h4>
+            <p>
+                <b>2022 - 2023 : </b><br>Completed all the certifications offered on FreeCodeCamp.
+                <br>
+                <b>2022 - 2023 : </b><br>Completed the Cisco Packet Tracer certification.
+            </p>
+        </section>
+    </div>
+
+
+
+
+    <div class="skills">
+        
+        <section>
+            <h3>Top Skills</h3>
+            <div class="language">
+                <div class="html">
+                    <p>HTML</p>
+                    <div class="progress-bar">
+                        <div class="percent">
+                            60%
+                        </div>
+                    </div>
+                </div>
+                <div class="css">
+                    <p>CSS</p>
+                    <div class="progress-bar">
+                        <div class="percent">
+                            40%
+                        </div>
+                    </div>
+                </div>
+                <div class="js">
+                    <p>JS</p>
+                    <div class="progress-bar">
+                        <div class="percent">
+                            20%
+                        </div>
+                    </div>
+                </div>
+                <div class="php">
+                    <p>PHP</p>
+                    <div class="progress-bar">
+                        <div class="percent">
+                            20%
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="div-spacer">
+
+            </div>
+
+            <div class="problem-solving">
+                <li>HTML, CSS
+                    <li class="sub">Proficient in building responsive and visually appealing web applications.</li>
+                </li>
+                <li>Problem-Solving
+                    <li class="sub">Strong analytical skills, with a track record of solving complex technical issues.</li>
+                </li>
+            </div>
+
+        </section>
+    </div>
+
+    <div class="experience">
+        <section>
+            <h3>Experience</h3>
+            <p>University of the Cordilleras | Web Dev Student <br>
+            2020 - present</p>
             <ol>
                 <li>Collaborated with cross-functional teams to design and implement responsive and user-friendly web applications, ensuring a seamless user experience.</li>
                 <li>Developed and maintained front-end components using HTML, CSS, and JavaScript, with a focus on performance and accessibility.</li>
                 <li>Conducted thorough testing and debugging to identify and resolve issues, ensuring the delivery of high-quality products.</li>
                 <li>Participated in Agile development processes, attending sprint meetings and providing valuable input to improve project workflows.</li>
             </ol>
-            </li>
-            
-        </ul>
-        <h3>Top Skills</h3>
-        <ul>
-            <li>HTML, CSS
-                <ul><li>Proficient in building responsive and visually appealing web applications.</li></ul>
-            </li>
-            <li>Problem-Solving
-                <ul>
-                    <li>Proficient in building responsive and visually appealing web applications.</li>
-                </ul>
-            </li>
-        </ul>
+        </section>
+    </div>
 
+    <div class="contact">
+        <section>
+            <div class="contact-details">
+                <div class="blur">
+                    <div class="contact-me">
+                        <h3>Contact Me</h3>
+                        <p>Wait Lang Guys Natatae Ako!</p>
+                        <div class="links">
+                            <a href="https://www.facebook.com/timmy.galleon" target="_blank" class="fb"><img src="img/facebook.png">facebook</a>
+                            <a href="https://www.linkedin.com/in/timothy-galleon-a7ba462aa/" target="_blank" class="linked"><img src="img/linked.png">LinkedIn</a>
+                            <a href="mailto:timothyguiang11142001@gmail.com" class="gmail"><img src="img/gmail.png">timothyguiang11142001@gmail.com</a>
+                            <a href="tel:+639153074905" class="phone"><img src="img/call.png">+63 915-307-4905</a>
+
+                        </div>
+                    </div>
+
+                    <img src="profile.jpg" class="contact-profile">
+                </div>
+
+            </div>
+
+        </section>
     </div>
 
 
-
-
-</section>
-
-
-
-<!----------------------------------------->
-<section class="bottom">
-    <div class="bottom-left-shape"></div>
-</section>
-<!----------------------------------------->
-
-</div>
-
-
+    <script src="css-js/script.js"></script>
 
 <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
