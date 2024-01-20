@@ -17,3 +17,13 @@ function showDiv(divName, currentLink) {
           
             document.querySelector('.' + divName).style.display = "flex";
         }
+
+        window.addEventListener('resize', function() {
+            // Check the current screen width
+            var screenWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+
+            // Reload the page if the screen width is less than or equal to 900 pixels
+            if (screenWidth <= 900) {
+                location.reload();
+            }
+        });
